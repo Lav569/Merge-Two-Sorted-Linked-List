@@ -170,25 +170,6 @@ input:hover{
     size-adjust:inherit;
     border-radius: 2px 5px 5px 2px;
   }
-  
-.navbar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .navbar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
 .random{
     border-radius: 5px;
     font-size: 20px;
@@ -199,7 +180,4 @@ input:hover{
 	color: white;
 	font-size: 16px;
 	border: white;
-	/* margin-left: 37vw;
-	margin-top: 4vw;
-	margin-right: 1vw; */
 }
