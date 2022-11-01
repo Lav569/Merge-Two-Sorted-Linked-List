@@ -3,8 +3,8 @@ var array_2=[10,20];
 var array_f=[];
 var a=0;
 function show() {
-    var x= JSON.stringify(document.getElementById("arrayf").value);
-    for(i=1;i< x.length-1;i++) {
+    var x=(document.getElementById("arrayf").value);
+    for(i=0;i< x.length;i++) {
         if(x[i]!=",") {
             a*=10;
             b= parseInt(x[i]);
@@ -18,25 +18,32 @@ function show() {
     array_1.push(a);
     a=0;
 }
-function check_value(){
+function check_value1(){
     var x = document.getElementById("arrayf").value;
-    if(x.charAt(x.length-1) ==" "){
-        document.getElementById("arrayf").style.color="red";
-        alert("dont use this character, give comma to seperate the value of two node");
-    }
-    else{
-        document.getElementById("arrayf").style.color="green";
+    for(var i=0;i<x.length;i++){
+        if( x[i]== "0" || x[i]== "1" ||x[i]== "2" ||x[i]== "3" ||x[i]== "4" ||x[i]== "5" ||x[i]== "6" ||x[i]== "7" ||x[i]== "8" ||x[i]== "9"||x[i]==","){
+            console.log(x[i]);
+            console.log(typeof(x[i]));
+        }
+        else{
+            alert("Invalid input,use digit and give comma to seperate two values");
+            break;
+        }
     }
 }
-// function large(){
-//     var x=document.getElementById("arrayf");
-//     x.style.height="50px";
-//     x.style.transition="height";
-//     x.style.transitionDelay="2s";
-// }
-// function small(){
-//     document.getElementById("arrayf").style.height="20px";
-// }
+function check_value2(){
+    var x = document.getElementById("arrays").value;
+    for(var i=0;i<x.length;i++){
+        if( x[i]== "0" || x[i]== "1" ||x[i]== "2" ||x[i]== "3" ||x[i]== "4" ||x[i]== "5" ||x[i]== "6" ||x[i]== "7" ||x[i]== "8" ||x[i]== "9"||x[i]==","){
+            console.log(x[i]);
+            console.log(typeof(x[i]));
+        }
+        else{
+            alert("Invalid input,use digit and give comma to seperate two values");
+            break;
+        }
+    }
+}
 function create_null(v){
     const g=document.getElementById(v);
     const a= document.createElement("div");
@@ -230,8 +237,8 @@ async function Bubble_Sort2() {
     }
 }
 function show1() {
-    const x= JSON.stringify(document.getElementById("arrays").value);
-    for(i=1;i< x.length-1;i++) {
+    const x=(document.getElementById("arrays").value);
+    for(i=0;i< x.length;i++) {
         if(x[i]!=",") {
             a*=10;
             b= parseInt(x[i]);
