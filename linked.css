@@ -1,0 +1,132 @@
+.heading{
+    height: 70px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    background-color: orange;
+    text-align: center;
+}
+.node_whole1{
+    border: 5px solid aqua;
+    background-color: white;
+    height: 50px;
+    width:88px;
+    padding:2px;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 10px;
+}
+.node_whole{
+    border: 5px solid aqua;
+    background-color: white;
+    height: 50px;
+    width:88px;
+    padding:2px;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    float: left;
+}
+.Null{
+    height: 20px;
+    font-size: 20px;
+    width:48px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 40px;
+    float: left;
+    text-align: center;
+}
+.value{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: red;
+    height:45px;
+    width:40px;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.pointer{
+    border: 2px solid orange;
+    border-radius: 5px;
+    background-color:blue;
+    height:45px;
+    width:40px;
+    float: left;
+}
+.dot{
+    margin: 15px;
+    margin-top: 20px;
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.icon_arrow{
+    width:70px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #000;
+    position: relative;
+    float: left;
+}
+.icon_arrow:after{
+    content:"";
+    display:inline;
+    width:30px;
+    height:4px;
+    border-radius: 2px;
+    background-color: #000;
+    transform:rotate(45deg);
+    position: absolute;
+    right: -4px;
+    bottom: 10px;
+}
+.icon_arrow:before{
+    content:"";
+    display:inline;
+    width:30px;
+    height:4px;
+    border-radius: 4px;
+    background-color: #000;
+    transform:rotate(-45deg);
+    position: absolute;
+    right: -4px;
+    bottom: -10px;
+}
+body{
+    margin: 10px;
+    margin-top: -20px;
+}
+.array1,.array2,#merging_head{
+    padding-top: 8px;
+    background-color:violet;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+}
+#linked_list1,#linked_list2,#linked_listf{
+    padding:2px 5px 5px 5px;
+    width: 99%;
+    height:100px;
+    border: 2px solid rgb(36, 102, 210);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+button:hover{
+    background-color: green;
+    box-shadow: 10px 10px 5px #888;
+}
+input,button{
+    box-shadow: 4px 4px 2px #888;
+}
+input:hover{
+    box-shadow: 5px 5px 5px #888;
+}
+#merge_btn{
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
