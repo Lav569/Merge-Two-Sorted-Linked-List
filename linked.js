@@ -4,7 +4,21 @@ var array_f=[];
 var a=0;
 function show() {
     var x=(document.getElementById("arrayf").value);
-    for(i=0;i< x.length;i++) {
+    var j=0;
+    for(i=0;i< x.length;i++){
+        if( x[i]== "0" || x[i]== "1" ||x[i]== "2" ||x[i]== "3" ||x[i]== "4" ||x[i]== "5" ||x[i]== "6" ||x[i]== "7" ||x[i]== "8" ||x[i]== "9"||x[i]==","){
+            console.log(x[i]);
+            console.log(typeof(x[i]));
+        }
+        else{
+            j++;
+        }
+    }
+    if(j!=0){
+        alert("Invalid input,use digit,give comma to seperate two values and enter the value again");
+    }
+    else{
+        for(i=0;i< x.length;i++) {
         if(x[i]!=",") {
             a*=10;
             b= parseInt(x[i]);
@@ -17,6 +31,7 @@ function show() {
     }
     array_1.push(a);
     a=0;
+    }
 }
 function check_value1(){
     var x = document.getElementById("arrayf").value;
@@ -238,6 +253,20 @@ async function Bubble_Sort2() {
 }
 function show1() {
     const x=(document.getElementById("arrays").value);
+    var j=0;
+    for(i=0;i< x.length;i++){
+        if( x[i]== "0" || x[i]== "1" ||x[i]== "2" ||x[i]== "3" ||x[i]== "4" ||x[i]== "5" ||x[i]== "6" ||x[i]== "7" ||x[i]== "8" ||x[i]== "9"||x[i]==","){
+            console.log(x[i]);
+            console.log(typeof(x[i]));
+        }
+        else{
+            j++;
+        }
+    }
+    if(j!=0){
+        alert("Invalid input,use digit,give comma to seperate two values and enter the value again");
+    }
+    else{
     for(i=0;i< x.length;i++) {
         if(x[i]!=",") {
             a*=10;
@@ -251,6 +280,7 @@ function show1() {
     }
     array_2.push(a);
     a=0;
+}
 }
 function create_node12(){
     array_2.splice(0, array_2.length);
