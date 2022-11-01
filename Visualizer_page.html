@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="linked.css">
+</head>
+<body>
+    <div class="heading"><span style="font-size:30px">
+        <b>Merge Two Sorted<br>Linked List</b></span></div>
+    <div class="array1">
+            <label for="Linked_List1">
+                <span style="width:70px;color:brown;font-size:25px"><b>Linked List 1:</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+            <input type="text" placeholder="Write the numbers" id="arrayf" style="height: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="create_node11()" id="create1" type="submit"><b style="font-size: 10px;">Create </b></button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="Bubble_Sort1()"><b style="font-size: 10px;float: left;">Sort </b></button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="random_ll1()"><b style="font-size: 10px;">Generate random Linked List </b></button>
+    </div>
+    <div id="linked_list1">
+        <div class="node_whole1" id="linked_list10">
+            <div class="value"><p class="node_value">5</p></div>
+            <div class="pointer">
+                <div class="dot">
+                    <div class="icon_arrow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="node_whole" id="linked_list11">
+            <div class="value"><p class="node_value">15</p></div>
+            <div class="pointer">
+                <div class="dot">
+                    <div class="icon_arrow"></div>
+                </div>
+            </div>
+        </div >
+        <div class="Null">
+            <span>Null</span>
+        </div>
+    </div>
+    <div class="array2">
+        <span style="width:70px;color:brown;font-size:25px"><b>Linked List 2:</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="Write the numbers" id="arrays" style="height: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="create_node12()"><b style="font-size: 10px;">Create </b></button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="Bubble_Sort2()"><b style="font-size: 10px;">Sort </b></button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="random_ll2()"><b style="font-size: 10px;">Generate random Linked List </b></button>
+    </div>
+    <div id="linked_list2">
+        <div class="node_whole1" id="linked_list20">
+            <div class="value"><p class="node_value">10</p></div>
+            <div class="pointer">
+                <div class="dot">
+                    <div class="icon_arrow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="node_whole" id="linked_list21">
+            <div class="value"><p class="node_value">20</p></div>
+            <div class="pointer">
+                <div class="dot">
+                    <div class="icon_arrow"></div>
+                </div>
+            </div>
+        </div >
+        <div class="Null">
+            Null
+        </div>
+    </div>
+    <div id="merging_head">
+        <span style="width:70px;color:brown;font-size:25px"><b>Merge Linked List</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="merge()" id="merge_btn"><b style="font-size: 10px;">Merge Linked List </b></button>&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div id="linked_listf">
+        <div class="node_whole1" id="linked_listf0">
+            <div class="value"><p class="node_value">5</p></div>
+            <div class="pointer">
+                <div class="dot">
+                    <div class="icon_arrow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="node_whole" id="linked_listf1">
+            <div class="value"><p class="node_value">10</p></div>
+            <div class="pointer">
+                <div class="dot">
+                    <div class="icon_arrow"></div>
+                </div>
+            </div>
+        </div >
+        <div class="node_whole">
+            <div class="value"><p class="node_value">15</p></div>
+            <div class="pointer">
+                <div class="dot">
+                    <div class="icon_arrow"></div>
+                </div>
+            </div>
+        </div >
+        <div class="node_whole">
+            <div class="value"><p class="node_value">20</p></div>
+            <div class="pointer">
+                <div class="dot">
+                    <div class="icon_arrow"></div>
+                </div>
+            </div>
+        </div >
+        <div class="Null">
+            Null
+        </div>
+    </div>
+    <script src="linked.js"></script>
+</body>
+</html>
