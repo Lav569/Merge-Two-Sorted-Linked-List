@@ -5,7 +5,7 @@ var a=0;
 function show() {
     var x= JSON.stringify(document.getElementById("arrayf").value);
     for(i=1;i< x.length-1;i++) {
-        if(x[i]!=" ") {
+        if(x[i]!=",") {
             a*=10;
             b= parseInt(x[i]);
             a=a+b;
@@ -18,6 +18,25 @@ function show() {
     array_1.push(a);
     a=0;
 }
+function check_value(){
+    var x = document.getElementById("arrayf").value;
+    if(x.charAt(x.length-1) ==" "){
+        document.getElementById("arrayf").style.color="red";
+        alert("dont use this character, give comma to seperate the value of two node");
+    }
+    else{
+        document.getElementById("arrayf").style.color="green";
+    }
+}
+// function large(){
+//     var x=document.getElementById("arrayf");
+//     x.style.height="50px";
+//     x.style.transition="height";
+//     x.style.transitionDelay="2s";
+// }
+// function small(){
+//     document.getElementById("arrayf").style.height="20px";
+// }
 function create_null(v){
     const g=document.getElementById(v);
     const a= document.createElement("div");
@@ -213,7 +232,7 @@ async function Bubble_Sort2() {
 function show1() {
     const x= JSON.stringify(document.getElementById("arrays").value);
     for(i=1;i< x.length-1;i++) {
-        if(x[i]!=" ") {
+        if(x[i]!=",") {
             a*=10;
             b= parseInt(x[i]);
             a=a+b;
